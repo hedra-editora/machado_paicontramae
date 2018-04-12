@@ -1,13 +1,3 @@
-TITULO = "SALUSTIO"
-GIT = `git log -1 --date=short --format=format:'%h'`
-# EPUB
-EXTENSAO = png
-TITULOEPUB = MARRA_CRACK
-COVER = capa.jpg
-INTERNET = manifesto-comunista
-
-
-
 all:
 	git log -1 --date=short --format=format:'\newcommand{\RevisionInfo}{%h}' > gitrevisioninfo.sty
 	latexmk -xelatex LIVRO.tex
